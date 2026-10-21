@@ -26,6 +26,10 @@ Estimate leaf health from a photo with on-device image analysis. It measures wha
 - One leaf filling the frame on a plain background gives the cleanest read.
 - For a sick or valuable plant, consult a local nursery or plant pathologist.
 
+## Stack
+
+Vanilla HTML/CSS/JS. All analysis is pure JavaScript (`leaf-core.js`): per-pixel color-space classification plus a connected-components spot scan on a canvas. No ML model, no dependencies, no build step, no server. Free on GitHub Pages.
+
 ## Screenshots
 
 | Desktop (light) | Desktop (dark) | Mobile |
