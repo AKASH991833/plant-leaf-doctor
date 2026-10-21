@@ -1,0 +1,26 @@
+/* plant-leaf-doctor specifics */
+.drop{border:2px dashed var(--border);border-radius:16px;padding:34px 20px;text-align:center;cursor:pointer;color:var(--ink-2);transition:border-color .15s,background .15s}
+.drop:hover,.drop:focus,.drop.over{border-color:var(--accent);background:var(--accent-soft);outline:none}
+.drop svg{width:44px;height:44px;margin-bottom:10px;opacity:.6}
+.drop p{margin:0;font-size:14px}
+.stages{display:grid;grid-template-columns:1fr 1fr;gap:12px;margin-top:16px}
+.stage canvas{width:100%;border:1px solid var(--border);border-radius:10px;display:block;margin-top:6px}
+.stage .hint{font-size:12px}
+.legend{font-style:normal}
+.lg{display:inline-block;width:10px;height:10px;border-radius:3px;margin:0 4px 0 10px;vertical-align:-1px}
+.lg.g{background:#2f9e44}.lg.y{background:#e8c547}.lg.b{background:#8b5a2b}
+.score-wrap{display:flex;gap:22px;align-items:center;margin:16px 0;flex-wrap:wrap}
+.ring{position:relative;width:120px;height:120px;flex-shrink:0}
+.ring svg{width:120px;height:120px;transform:rotate(-90deg)}
+.ring-bg{fill:none;stroke:var(--bg-soft);stroke-width:12}
+.ring-fg{fill:none;stroke:var(--accent);stroke-width:12;stroke-linecap:round;stroke-dasharray:326.7;stroke-dashoffset:326.7;transition:stroke-dashoffset .6s}
+.ring-num{position:absolute;inset:0;display:flex;flex-direction:column;align-items:center;justify-content:center}
+.ring-num .mono{font-size:30px;font-weight:700}
+.metrics{flex:1;min-width:180px;display:grid;grid-template-columns:1fr 1fr;gap:10px}
+.metric{border:1px solid var(--border);border-radius:10px;padding:10px 12px;display:flex;flex-direction:column;gap:2px}
+.metric .mono{font-size:18px;font-weight:700}
+.tips{margin:0;padding-left:18px;font-size:14px;line-height:1.75;color:var(--ink-2)}
+#status{margin-top:6px;min-height:20px}
+#status.err{color:#b91c1c}
+.log-row{display:flex;justify-content:space-between;align-items:center;gap:10px;border:1px solid var(--border);border-radius:10px;padding:10px 14px;margin-bottom:8px;font-size:14px;flex-wrap:wrap}
+.log-row .mono{font-weight:700}
